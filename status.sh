@@ -39,16 +39,16 @@ COLOR_BOLD='\033[1m'
 
 # emoji definitions
 EMOJI_BRANCH=" 🌿 "
-EMOJI_AHEAD="⬆️ "
-EMOJI_BEHIND="⬇️ "
+EMOJI_AHEAD=" ⬆️ "
+EMOJI_BEHIND=" ⬇️ "
 EMOJI_DIVERGED=" 🔱 "
 EMOJI_STAGED=" ✅ "
 EMOJI_MODIFIED=" 📝 "
 EMOJI_DELETED=" 🗑️ "
 EMOJI_RENAMED="➡️ "
 EMOJI_UNTRACKED=" ❓ "
-EMOJI_CLEAN="✔️"
-EMOJI_CONFLICT="⚠️ "
+EMOJI_CLEAN=" ✔️ "
+EMOJI_CONFLICT=" ⚠️ "
 EMOJI_SUMMARY=" 📊 "
 
 # difference statistics bar configuration
