@@ -1,6 +1,12 @@
+<div align="center">
+
+![https://asciinema.org/a/4HojzjC21FEl6vt4Z54nrRUXJ](./demo.gif)
+
 # Gitrance
 
-This project contains a collection of custom Bash scripts designed to enhance the Git command-line experience. These scripts provide beautified output and a more intuitive interface.
+*A collection of custom Bash scripts designed to enhance the Git command-line experience.*
+
+</div>
 
 ## Usage
 
@@ -26,31 +32,9 @@ This project contains a collection of custom Bash scripts designed to enhance th
         dst = !"/path/to/gitrance/diff-stat.sh"
         lg = !"/path/to/gitrance/log.sh"
         st = !"/path/to/gitrance/status.sh"
+        br = !"/path/to/gitrance/branch.sh"
     ```
     Replace `/path/to/gitrance` with the actual path where you cloned the repository.
-
-### How to Use
-
-Once the aliases are set up, you can use the enhanced commands as follows:
-
-*   **`git dst`**: Runs `diff-stat.sh`, optionally followed by any `git diff` arguments.
-    ```bash
-    git dst
-    git dst HEAD~1 HEAD
-    git dst --cached
-    ```
-
-*   **`git lg`**: Runs `log.sh`, optionally followed by any `git log` arguments.
-    ```bash
-    git lg
-    git lg -n 5
-    git lg --author="Your Name"
-    ```
-
-*   **`git st`**: Simply runs `status.sh`.
-    ```bash
-    git st
-    ```
 
 ## Configuration
 
@@ -72,67 +56,6 @@ GREEN_BLOCK="∎"
 # file level visualization configuration
 CIRCLE="●"
 MAX_CIRCLES=10
-```
-
-## Scripts
-
-### status
-
-```
->git st
- 🌿  On branch master [Up-to-date with origin/master]
-
-
-Unstaged changes:
-    📝  modified:   global.json [+1, -1]
-    📝  modified:   samples/Argu.Samples.LS/Argu.Samples.LS.fsproj [+5, -1]
-```
-
-```
-> git st
- 🌿  On branch master [⬇️ 2 Behind | origin/master]
- 📊  Staged changes summary: +10, -6 ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-
-Staged changes:
-    ✅  modified:   Directory.Packages.props [+5, -5]
-    ✅  modified:   RELEASE_NOTES.md [+4, -0]
-    ✅  modified:   tests/Argu.Tests/Argu.Tests.fsproj [+1, -1]
-```
-
-### diff --stat
-
-```
-> git dst 6.2.0
-Diff summary for: git diff 6.2.0
- 📊  Total: +133, -62 ∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎
-
-File changes:
-  .config/dotnet-tools.json  [●●●●  +2, -2]
-  Directory.Packages.props  [●●●●●●  +6, -6]
-  RELEASE_NOTES.md  [●●●●●●●  +19, -2]
-  docs/index.fsx  [●●  +1, -1]
-```
-
-## log
-
-```
-> git lg
-* ➜ d641dea 📍 HEAD -> main ☁️ origin/main ☁️ origin/HEAD [build]: .....  👤 Muqiu Han  ⏰ 8 months ago
-*   ➜ 470718f Merge pull request #14 from X-FRI/main  👤 Muqiu Han  ⏰ 10 months ago
-|\
-| * ➜ 0ab19f0 [core]: add Node::remove_item_from_leaf  👤 Muqiu Han  ⏰ 10 months ago
-| * ➜ a37c77f [core]: fix collection bugs and some security fixes.  👤 Muqiu Han  ⏰ 10 months ago
-| * ➜ b6e4dc9 [core]: fix node serializer error.  👤 Muqiu Han  ⏰ 10 months ago
-|/
-*   ➜ 8aa6852 Merge pull request #13 from X-FRI/main  👤 Muqiu Han  ⏰ 11 months ago
-|\
-| * ➜ 55555d3 [core]: A lot of detail optimization and test error fixes.  👤 Muqiu Han  ⏰ 11 months ago
-| * ➜ 80ed26a [core]: optimize data_access_layer and node and test it.  👤 Muqiu Han  ⏰ 11 months ago
-| * ➜ d289bec [core]: fix data_access_layer tests.  👤 Muqiu Han  ⏰ 11 months ago
-| * ➜ dc3fb61 [libs]: fix endian deps  👤 Muqiu Han  ⏰ 11 months ago
-| * ➜ 5d016a1 [core]: fix endian deps, remove extra files.  👤 Muqiu Han  ⏰ 11 months ago
-|/
-*   ➜ b8dfcef Merge pull request #12 from X-FRI/main  👤 Muqiu Han  ⏰ 11 months ago
 ```
 
 ## License
